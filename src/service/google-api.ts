@@ -6,8 +6,8 @@ export const api = create({
     baseURL: GOOGLE_API,
   });
   
-  export const getBooks = async (search: string) => {
-    const response: ApiResponse<any[], any> = await api.get<any[]>(BOOKS_VOLUMNES_URL,{q: search});
+  export const getBooks = async () => {
+    const response: ApiResponse<any[], any> = await api.get<any[]>(BOOKS_VOLUMNES_URL,{q: "dark"});
     const { data } = response;
     if (response.ok) {
         console.log("ok", response)
