@@ -9,7 +9,6 @@ export const api = create({
   
   export const getTopMovies = async () => {
     const response: ApiResponse<any[], any> = await api.get<any[]>(TOP_MOVIES_URL);
-    debugger
     const { data } = response;
     if (response.ok) {
         console.log("ok", response)

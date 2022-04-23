@@ -1,22 +1,52 @@
 .header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
+  background-color: #e9652d;
+  padding: 5px;
+  text-align: left;
+  color: #fff;
 }
-body {
+/* body {
   background: linear-gradient(104deg, #f27121, #e94057, #da9e3e);
-}
+} */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav .logo img{
+  height: 50px;
+  padding: 14px 16px;
+  float: left;
+}
+
+.topnav h1 {
+  color: #e9652d;
+  float:right;
 }
 
 .topnav button {
-  float: left;
-  display: block;
+  color: #e9652d;
   text-align: center;
+  padding: 14px 16px;
+  margin: 10px;
   text-decoration: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
+
+.topnav button:hover {
+  background-color: #e9652d;
+  color: #fff;
+}
+
+.topnav button.active {
+  background-color: #e9652d;
+  color: white;
+}
+
 .card-container {
   justify-content: space-around;
   display: grid;
@@ -62,6 +92,6 @@ body {
   overflow: hidden;
 }
 
-h3 {
+/* h3 {
   color: #fff;
-}
+} */
