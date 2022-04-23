@@ -92,6 +92,12 @@
   overflow: hidden;
 }
 
+.disabled-text{
+ display: flex;
+ justify-content: center;
+ color: gray;
+ padding-top: 300px;
+}
 /* h3 {
   color: #fff;
 } */

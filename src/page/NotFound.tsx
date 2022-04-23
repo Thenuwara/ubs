@@ -1,11 +1,5 @@
-import React from 'react'
-
 const NotFound = () => {
-    return (
-        <div>
-            Page Not Found
-        </div>
-    )
-}
+  return <h1 className="disabled-text">Page not found :( </h1>;
+};
 
-export default NotFound
+export default NotFound;
