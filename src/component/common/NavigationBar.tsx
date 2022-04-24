@@ -10,7 +10,7 @@ const NavigationBar = () => {
   return (
     <div className="topnav">
       <div className="logo">
-        <img src={window.location.origin + "/logo.png"} />
+        <img src={window.location.origin + "/logo.png"} alt=""/>
         <h1> THE-NU </h1>
       </div>
       <div>

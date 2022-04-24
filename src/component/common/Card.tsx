@@ -4,7 +4,7 @@ const Card = (props: { id?: string; title?: string; image?: string; onClick: any
     <div className="card" key={id}>
       <div style={{ animationName: "fadeInUp", animationDuration: "1s" }}>
         <button data-testid={"card-test-id" + id} className="single-featured-box" onClick={onClick}>
-          <img src={image} />
+          <img src={image} alt=""/>
           <h3>{title}</h3>
         </button>
       </div>

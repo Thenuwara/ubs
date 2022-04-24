@@ -5,7 +5,7 @@ const InfoWrapper = (type: any, title: any,image: any, component: any) => {
         <div className="info-preview">
           <h6>{type}</h6>
           <h2>{title}</h2>
-          <img style={{ height: "400px" }} src={image} />
+          <img style={{ height: "400px" }} src={image} alt=""/>
         </div>
         <div className="info-info">
           {component}
