@@ -1,32 +1,26 @@
-import { IMovie } from '../../model/Movie';
-import InfoWrapper from '../common/InfoWrapper';
+import { IMovie } from "../../model/Movie";
+import Data from "../common/Data";
+import InfoWrapper from "../common/InfoWrapper";
 
-const MovieInfo = (props: { info: IMovie; }) => {
-    const { info } = props;
-    return (
-      <>
-        {InfoWrapper(
-          "Movie",
-          info?.fullTitle,
-          info?.image,
-          <div>
-            <h2>Title</h2>
-            {info?.title}
-            <h2>Year</h2>
-            {info?.year}
-            <h2>IMDB Rating</h2>
-            {info?.imDbRating}
-            <h2>IMDB Rating Count</h2>
-            {info?.imDbRatingCount}
-            <h2>Rank</h2>
-            {info?.rank}
-            <h2>Crew</h2>
-            {info?.crew}
-            
-          </div>
-        )}
-      </>
-    );
-  };
+const MovieInfo = (props: { info: IMovie }) => {
+  const { info } = props;
+  return (
+    <>
+      {InfoWrapper(
+        "Movie",
+        info?.fullTitle,
+        info?.image,
+        <div>
+          <Data lable={"Title"} value={info?.title} />
+          <Data lable={"Year"} value={info?.year} />
+          <Data lable={"IMDB Rating"} value={info?.imDbRating} />
+          <Data lable={"IMDB Rating Count"} value={info?.imDbRatingCount} />
+          <Data lable={"Rank"} value={info?.rank} />
+          <Data lable={"Crew"} value={info?.crew} />
+        </div>
+      )}
+    </>
+  );
+};
 
-export default MovieInfo
+export default MovieInfo;

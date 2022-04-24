@@ -1,4 +1,5 @@
 import { IBook } from "../../model/Book";
+import Data from "../common/Data";
 import InfoWrapper from "../common/InfoWrapper";
 
 const BookInfo = (props: { info: IBook }) => {
@@ -11,17 +12,11 @@ const BookInfo = (props: { info: IBook }) => {
         volumeInfo?.title,
         volumeInfo?.imageLinks?.thumbnail,
         <div>
-          <h2>Description</h2>
-          {volumeInfo?.description}
-          <h2>Published Date</h2>
-          {volumeInfo?.publishedDate}
-          <h2>Publisher</h2>
-          {volumeInfo?.publisher}
-          <h2>Categories</h2>
-          {volumeInfo?.categories}
-          <h2>Authors</h2>
-          {volumeInfo?.authors}
-          
+          <Data lable={"Description"} value={volumeInfo?.description}/>
+          <Data lable={"Published Date"} value={volumeInfo?.publishedDate}/>
+          <Data lable={"Publisher"} value={volumeInfo?.publisher}/>
+          <Data lable={"Categories"} value={volumeInfo?.categories}/>
+          <Data lable={"Authors"} value={volumeInfo?.authors}/>          
         </div>
       )}
     </>

@@ -1,5 +1,5 @@
 import loadable from "@loadable/component";
-import NavigationBar from "../component/NavigationBar";
+import NavigationBar from "../component/common/NavigationBar";
 import { splitCamelCase } from "../utils/common";
 
 const ComponentWrapper = (props: { page: string }) => {

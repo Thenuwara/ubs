@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { BOOK_PAGE_URL, MOVIE_PAGE_URL } from "../constant/route-path";
+import { BOOK_PAGE_URL, MOVIE_PAGE_URL } from "../../constant/route-path";
 
 const NavigationBar = () => {
   const navigate = useNavigate();

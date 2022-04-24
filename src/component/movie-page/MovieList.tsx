@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { MOVIE_INFO_PAGE_URL } from "../../constant/route-path";
-import Card from "../Card";
+import Card from "../common/Card";
 
 const MovieList = (props: { movies: any; }) => {
   const navigate = useNavigate();

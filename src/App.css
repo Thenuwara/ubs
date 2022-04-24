@@ -90,6 +90,8 @@
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  border: none;
+  background: none;
 }
 
 .disabled-text{
