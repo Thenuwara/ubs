@@ -3,13 +3,11 @@ import { getBooks } from "../service/google-api";
 import { useParams } from "react-router-dom";
 import BookInfo from "../component/book-info-page/BookInfo";
 import { Book } from "../model/Book";
-import Spinner from "../component/common/Spinner";
 import { AppDispatch } from "../store";
 import { useAppDispatch } from "../store/hook";
 import { resetState, setError } from "../store/slice/error-slice";
 
 const BookInfoPage = () => {
-  const [loading, setLoading] = useState<boolean>(true);
   const [bookInfo, setBookInfo] = useState<any>(new Book());
   const { id } = useParams();
   const dispatch: AppDispatch = useAppDispatch()
@@ -29,18 +27,13 @@ const BookInfoPage = () => {
           })
         );
       }
-      setLoading(false);
     };
 
     dispatch(resetState())
-    setLoading(true);
     getBookByIdAsync(id)
   }, [id, dispatch]);
   return (
-    <>
       <BookInfo info={bookInfo} />
-      <Spinner loading={loading} />
-    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import BookInfoPage from "../BookInfoPage";
 import * as google_api from "../../service/google-api";
 import { ApiErrorResponse, ApiOkResponse } from "apisauce";
