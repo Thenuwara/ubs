@@ -11,7 +11,7 @@ const MovieList = (props: { movies: any; }) => {
   return (
     <>
       {movies.map((obj: { id: string; title: string; image: string; }) => (
-        <Card key={obj.id} onClick ={() => onClick(obj.id)} title={obj.title} image={obj.image} />
+        <Card key={obj.id} id={obj.id} onClick ={() => onClick(obj.id)} title={obj.title} image={obj.image} />
       ))}
     </>
   );

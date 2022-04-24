@@ -24,7 +24,7 @@ const MovieInfoPage = () => {
     return () => {
       isUnmounted = true;
     };
-  }, []);
+  }, [id]);
   return (
     <>
       <MovieInfo info={movieInfo} />

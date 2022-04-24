@@ -25,7 +25,7 @@ const BookInfoPage = () => {
     return () => {
       isUnmounted = true;
     };
-  }, []);
+  }, [id]);
   return (
     <>
       <BookInfo info={bookInfo} />

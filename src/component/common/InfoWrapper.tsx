@@ -1,6 +1,3 @@
-import { title } from "process";
-import React from "react";
-
 const InfoWrapper = (type: any, title: any,image: any, component: any) => {
   return (
     <div>
